@@ -1,6 +1,6 @@
 <?php
 
-$resumeText = $_POST['resume'];
+$resumeText = $_POST['skills'] . ' ' . $_POST['experience'] . ' ' . $_POST['soft'];
 
 // create txt file from resume input
 $resumeFile = fopen("resume.txt", "w") or die("Unable to open file!");

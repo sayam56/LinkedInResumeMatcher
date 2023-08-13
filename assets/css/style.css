@@ -49,7 +49,7 @@ textarea {
   background-size:cover;
   background-repeat:no-repeat;
   background-position:center;
-  padding:40px 0px;
+  padding:20px 20px;
   position:relative;
   display:flex;
   align-items:center;
@@ -71,7 +71,7 @@ textarea {
 }
 
 ._form-05-box{
-  width:700px;
+  width:790px;
   max-width:100%;
   position:relative;
   display:block;
@@ -82,14 +82,14 @@ textarea {
 }
 
 .form-05-box-a{
-  padding:250px 30px;
+  padding:250px 15px;
   background-color:rgba(38, 43, 72, 1);
   border-top-left-radius: 6px;
   border-bottom-left-radius: 6px;
 }
 
 ._mn_df{
-  padding:150px 20px;
+  padding: 20px 00px;
   background:#fff;
   border-top-right-radius:6px;
   border-bottom-right-radius:6px;
@@ -110,7 +110,7 @@ textarea {
 
 ._form_05_logo,._form_05_socialmedia,.main-head{
   margin:20px 0px;
-  display:inline-block;
+  display:flex;
   width:100%;
   text-align:center;
   text-align: center;
@@ -126,53 +126,13 @@ textarea {
   text-transform:uppercase;
 }
 
-._form_05_logo p{
-    color: #fff;
-    line-height: 22px;
-    text-align: left;
-    margin: 30px 0 0 0;
-    text-align: center;
-    font-size: .9rem;
-}
 
 ._lk_nb{
   display:flex;
 }
 
-._form_05_socialmedia ol li{
-  display:block;
-  width:100%;
-  cursor:pointer;
-  padding:10px 5px 10px 35px;
-  background:#3b5998;
-  color:#fff;
-  font-family: "Open Sans";
-  font-size:13px;
-  text-align:left;
-  position:relative;
-  border-radius:2px;
-  margin:10px 0 0 0;
-}
 
-._form_05_socialmedia ol li:nth-child(2){
-  background:#00aced;
-}
 
-._form_05_socialmedia ol li:nth-child(3){
-  background:#c32f10;
-}
-
-._form_05_socialmedia ol li i{
-    position: absolute;
-    color:#fff;
-    font-size:15px;
-    left: 10px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 100%;
-    top: 0;
-}
 
 .main-head h2{
   font-size:18px;
@@ -250,7 +210,10 @@ textarea {
   padding: 10px;
 }
 
-
+textarea{
+  margin: 15px;
+  width: 300px;
+}
 
  @media screen and (max-width: 767px){
     ._form_05{
