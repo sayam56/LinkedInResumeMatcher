@@ -6,10 +6,8 @@ from pathlib import Path
 # Sample CV and job posting texts (you can replace them with your own data)
 cv_text=Path('resume.txt').read_text()
 
-job_posting_text = """
-We are looking for a Python developer with experience in machine learning and NLP. The ideal candidate should be familiar with deep learning frameworks such as TensorFlow and PyTorch.
-Strong problem-solving skills and a passion for tackling challenging projects are essential for this role.
-"""
+
+job_posting_text=Path('job.txt').read_text()
 
 # Tokenization and stopword removal
 def preprocess_text(text):

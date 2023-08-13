@@ -27,11 +27,12 @@
     <section class="_form_05">
       <div class="container">
         <div class="row">
-          <div class="col-12">
+          <div class="col-12 resultBox">
             <div class="result">
               <span class="header_title">Results</span>
               <span class="result_text"><?php echo $resultText;?></span>
             </div>
+            <a class="homeButton" href="index.php">Return To Job View</a>
           </div>
         </div>
       </div>

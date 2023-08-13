@@ -1,4 +1,13 @@
 <?php
+session_start();
+$jobDescription = $_SESSION["jobDescription"];
+
+// echo $jobDescription;
+
+// create txt file from job desc
+$jobFile = fopen("job.txt", "w") or die("Unable to open file!");
+fwrite($jobFile, $jobDescription);
+fclose($jobFile);
 
 $resumeText = $_POST['skills'] . ' ' . $_POST['experience'] . ' ' . $_POST['soft'];
 
