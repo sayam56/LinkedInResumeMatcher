@@ -184,6 +184,17 @@ textarea {
   color:#fff;
 }
 
+._btn_04_job {
+  display: inline-block;
+  width: 70%;
+  padding: 12px 0px;
+  background: #01cc66;
+  border-radius:5px;
+  text-align: center;
+  font-size: 16px;
+  color: #fff;
+}
+
 .result{
   color: white;
   position:relative;
@@ -214,6 +225,88 @@ textarea{
   margin: 15px;
   width: 300px;
 }
+
+.homeButton{
+  margin: 15px 25px;
+  padding: 25px;
+  height: 50px;
+  width: 350px;
+  color: white;
+  background-color: #01cc66;
+  position:relative;
+  display:flex;
+  z-index: 3;
+  font-size: 26px;
+  justify-content:center;
+  align-items: center;
+}
+
+.resultBox{
+  display: flex;
+  flex-direction: column;
+  justify-content:center;
+  align-items: center;
+}
+
+.job_outer_box{
+  position:relative;
+  z-index: 3;
+  color: white;
+}
+
+#jobTitle{
+  font-size: 26px;
+  color: #01cc66;
+  text-align: center;
+  padding: 25px;
+  font-weight: bold;
+}
+
+table{
+  overflow-y:scroll;
+  height: 650px;
+  display:block;
+  border-radius: 25px;
+  background: #ffffff;
+  box-shadow: inset 8px 8px 16px #cccccc, 
+              inset -8px -8px 16px #ffffff;
+}
+
+
+table::-webkit-scrollbar {
+    display: none;
+}
+
+th{
+  position: sticky;
+  top: 0; /* Don't forget this, required for the stickiness */
+  padding: 15px;
+  color: black;
+  background: #F05E23;
+  text-align: center;
+  vertical-align: middle;
+}
+
+/* table thead .thead-dark{
+  background-color: black;
+  color: green;
+} */
+
+td{
+  padding:20px;
+  color: black;
+}
+
+tr:hover{
+  background: rgba(0,0,0,.1);
+}
+
+td ._btn_04_job{
+  background-color: #01cc66;
+  color: white;
+}
+
+
 
  @media screen and (max-width: 767px){
     ._form_05{

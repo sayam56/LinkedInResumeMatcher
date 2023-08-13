@@ -1,3 +1,32 @@
+<?php
+   /*DB connect*/
+   try{
+    $conn=new PDO("mysql:host=localhost;dbname=linkedin_resume;",'root','');
+    echo "<script>console.log('connection successful');</script>";
+
+    $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+  }
+  catch(PDOException $e){
+      echo "<script>window.alert('connection error');</script>";
+  }
+  
+  $jobNumber = $_POST["jobID"];
+  $jobDesc = '';
+  try{
+    $sql= "SELECT text FROM job_posting where id= '".$jobNumber."'";
+    $obj = $conn->query($sql);
+    $table = $obj->fetchAll();
+    foreach ($table as $key) {
+      $jobDesc = $key[0];
+    }
+  }catch(PDOException $e){
+      echo $e;
+    }
+
+    // Start the session
+    session_start();
+    $_SESSION["jobDescription"] = $jobDesc;
+?>
 <!doctype html>
 <html lang="en">
   <head>
@@ -23,15 +52,7 @@
                   <div class="form-05-box-a">
                     <div class="_form_05_logo">
                       <h2>smart resume</h2>
-                      <!-- <p>Login using social media to get quick access</p> -->
                     </div>
-                    <!-- <div class="_form_05_socialmedia">
-                      <ol>
-                        <li><a href="#"><i class="fa fa-facebook"></i></a>Sign With Facebook</li>
-                        <li><a href="#"><i class="fa fa-twitter"></i></a>Sign With Twitter</li>
-                        <li><a href="#"><i class="fa fa-google-plus"></i></a>Sign With Google</li>
-                      </ol>
-                    </div> -->
                   </div>
                 </div>
                 <div class="col-sm-9 _nb-pl">
@@ -51,22 +72,6 @@
                         
                       </div>
                     </form>
-                    
-
-                    <!-- <div class="form-group">
-                      <input type="password" name="password" class="form-control" type="text" placeholder="Enter Password" required="" aria-required="true">
-                    </div> -->
-
-                    <!-- <div class="checkbox form-group">
-                      <div class="form-check">
-                        <input class="form-check-input" type="checkbox" value="" id="">
-                        <label class="form-check-label" for="">
-                          Remember me
-                        </label>
-                      </div>
-                      <a href="#">Forgot Password</a>
-                    </div> -->
-
                     
                   </div>
                 </div>
