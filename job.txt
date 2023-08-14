@@ -1,0 +1,1 @@
+We are looking for a skilled Front-End Developer with expertise in HTML, CSS, and JavaScript. You should have a strong understanding of responsive design principles and experience with front-end frameworks such as React or Angular. Collaborate with UI/UX designers to implement seamless user experiences and translate mockups into interactive web applications.

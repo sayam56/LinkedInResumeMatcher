@@ -95,7 +95,7 @@ try {
 </head>
 
 <body class="picture-add">
-    <div class="container">
+    <div class="container front">
         <div>Interview Questions:</div>
         <?php
         try {

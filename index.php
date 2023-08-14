@@ -29,14 +29,6 @@ try {
             padding: 20px;
         }
 
-        .job-card {
-            background-color: #ffffff;
-            border-radius: 8px;
-            padding: 20px;
-            margin: 20px 0;
-            box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
-        }
-
         .job-title {
             font-size: 1.2rem;
             margin: 0;
@@ -58,7 +50,8 @@ try {
 
 <body>
     <div class="container1 container">
-        <h1>LinkedIn Resume - Jobs</h1>
+        <div class="front">
+        <h1 class="job_title">LinkedIn Resume - Jobs</h1>
         <?php
         try {
             $sql = "SELECT * FROM new_job_posting";
@@ -78,7 +71,9 @@ try {
                         <p class="job-description">
                             <?php echo $key[3]; ?>
                         </p>
-                        <button type="submit" name="job_select_<?php echo $key[0]; ?>" class="_btn_04_job">Select</button>
+                        <div class="buttonAlign">
+                          <button type="submit" name="job_select_<?php echo $key[0]; ?>" class="_btn_04_job">Select</button>
+                        </div>
                     </div>
                 </form>
 
@@ -88,6 +83,7 @@ try {
             echo $e;
         }
         ?>
+        </div>
     </div>
 </body>
 

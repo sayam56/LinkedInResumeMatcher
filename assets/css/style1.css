@@ -1,3 +1,10 @@
+body {
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
+  overflow-x: hidden; /* Hide horizontal scrollbar */ 
+}
+
 .picture-add {
     background:url(../images/bg-05.jpg);
     background-size:cover;
@@ -10,5 +17,62 @@
     background-size:cover;
     background-repeat:no-repeat;
     background-position:center;
+    width: 98%;
+    max-width: none;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .container1::before, .picture-add::before {
+    position: absolute;
+    content: "";
+    background:rgba(0,0,0,0.8);
+    height: 162%;
     width: 100%;
+    left: 0;
+    z-index:1;
+    top: 0px;
+  }
+
+  .picture-add::before{
+    height: 102% !important;
+  }
+
+  .front{
+    position: relative;
+    z-index:3;
+  }
+
+
+  ._btn_04_job {
+    display: inline-block;
+    width: 100px;
+    padding: 12px 0px;
+    background: #01cc66;
+    border-radius:5px;
+    text-align: center;
+    font-size: 16px;
+    color: #fff;
+    text-align: center;
+  }
+
+  .buttonAlign{
+    text-align: center;
+  }
+
+  .job-card {
+      background-color: #ffffff;
+      border-radius: 8px;
+      padding: 20px;
+      margin: 20px 0;
+      box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+      vertical-align: center;
+      text-align: left;
+      max-width: 1000px;
+  }
+
+  .job_title{
+    color: white;
   }
