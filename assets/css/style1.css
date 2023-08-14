@@ -1,0 +1,14 @@
+.picture-add {
+    background:url(../images/bg-05.jpg);
+    background-size:cover;
+    background-repeat:no-repeat;
+    background-position:center;
+  }
+
+  .container1 {
+    background:url(../images/bg-05.jpg);
+    background-size:cover;
+    background-repeat:no-repeat;
+    background-position:center;
+    width: 100%;
+  }

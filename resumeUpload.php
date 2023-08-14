@@ -13,7 +13,7 @@
   $jobNumber = $_POST["jobID"];
   $jobDesc = '';
   try{
-    $sql= "SELECT text FROM job_posting where id= '".$jobNumber."'";
+    $sql= "SELECT JobDescription FROM new_job_posting where id= '".$jobNumber."'";
     $obj = $conn->query($sql);
     $table = $obj->fetchAll();
     foreach ($table as $key) {
