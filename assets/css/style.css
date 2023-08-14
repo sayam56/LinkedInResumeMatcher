@@ -44,6 +44,13 @@ textarea {
   outline: none; 
 }
 
+.picture-add {
+  background:url(../images/bg-05.jpg);
+  background-size:cover;
+  background-repeat:no-repeat;
+  background-position:center;
+}
+
 ._form_05{
   background:url(../images/bg-05.jpg);
   background-size:cover;
@@ -212,6 +219,7 @@ textarea {
   justify-content: center;
   align-items: center;
   font-size: 30px;
+  text-align: center;
 }
 
 .result_text{
@@ -306,7 +314,9 @@ td ._btn_04_job{
   color: white;
 }
 
-
+.w-30 {
+  width: 30%;
+}
 
  @media screen and (max-width: 767px){
     ._form_05{
