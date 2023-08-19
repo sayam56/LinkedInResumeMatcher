@@ -38,7 +38,7 @@ if ($file = fopen("result.txt", "r")) {
               </span>
               <button type="submit" name="interview_Questions" class="_btn_04_job w-30">Go for Interview Questions</button>
             </div>
-            <a class="homeButton" href="home.php">Return To Job View</a>
+            <a class="homeButton" href="index.php">Return To Job View</a>
           </div>
         </div>
       </div>
